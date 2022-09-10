@@ -309,4 +309,81 @@ body {
 }
 .partners__logo {
   width: 100%;
+}
+
+.footer {
+  padding-top: 8rem;
+  padding-bottom: 4.7rem;
+  background-image: url("../assets/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+}
+.footer__heading {
+  font-family: "Playfair";
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.footer__description {
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+.footer__tags {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 0.6rem;
+  row-gap: 2rem;
+}
+.footer__link {
+  padding: 1rem 2rem;
+  color: var(--white);
+  text-transform: lowercase;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: var(--light-gray);
+  background-color: #0f0f0f;
+  text-align: center;
+}
+.footer .link1, .footer .link2, .footer .link3 {
+  grid-column: span 2;
+}
+.footer .link4, .footer .link5 {
+  grid-column: span 3;
+}
+.footer__form {
+  margin-top: 2.6rem;
+}
+.footer__input {
+  width: 21rem;
+  height: 4.2rem;
+  padding-left: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.footer__input::placeholder {
+  font-size: 1.4rem;
+  color: #969696;
+}
+.footer__btn {
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  background-color: #0f0f0f;
+  padding: 1rem 2rem;
+}
+.footer .copyright {
+  position: relative;
+  bottom: -6rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  background-color: var(--accent);
+  font-size: 1.2rem;
+  color: var(--light-gray);
+}
+.footer .copyright__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .copyright__link {
+  color: var(--light-gray);
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
