@@ -16,3 +16,9 @@
 
 - [ ] Header 
 - [x] Hero
+- [ ] Collection
+- [ ] Arrivals
+- [ ] Articles
+- [ ] Partners
+- [ ] Footer
+- [ ] Adaptive
