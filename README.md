@@ -19,6 +19,6 @@
 - [x] Collection
 - [x] Arrivals
 - [x] Articles
-- [ ] Partners
+- [x] Partners
 - [ ] Footer
 - [ ] Adaptive

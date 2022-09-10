@@ -312,7 +312,7 @@ body {
     }
 
     &__row {
-        &:not(last-child) {
+        &:not(:last-child) {
             margin-bottom: 4rem;
         }
     }
@@ -336,7 +336,7 @@ body {
     }
 
     &__row {
-        &:not(last-child) {
+        &:not(:last-child) {
             margin-bottom: 3.5rem;
         }
     }
@@ -374,11 +374,34 @@ body {
         font-size: 1.8rem;
 
         span {
-            &:not(first-child) {
+            &:not(:first-child) {
                 margin-left: 1.4rem;
             }
         }
     }
+}
+
+//partners
+.partners {
+    padding: 9rem 26.7rem 10.6rem;
+    background-color: var(--accent);
+    padding: 9rem 26.7rem 10.6rem;
+
+    &__title {
+        margin-bottom: 6.6rem;
+    }
+
+    &__col {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+    }
+
+
 }
 
 
