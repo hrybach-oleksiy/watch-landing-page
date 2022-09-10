@@ -95,7 +95,7 @@ body {
   position: relative;
 }
 
-.btn {
+.button {
   padding: 1.2rem 2.8rem;
   background-color: transparent;
   text-transform: uppercase;
@@ -253,4 +253,45 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 19.6rem;
+}
+
+.articles {
+  padding-top: 6.3rem;
+  background-color: var(--accent);
+}
+.articles__title {
+  margin-bottom: 5.7rem;
+}
+.articles__row:not(last-child) {
+  margin-bottom: 3.5rem;
+}
+.articles__img {
+  width: 100%;
+}
+.articles__info {
+  padding-top: 5.3rem;
+  padding-left: 13rem;
+  padding-right: 14.3rem;
+}
+.articles__heading {
+  margin-bottom: 1.4rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.articles__description {
+  font-size: 1.4rem;
+  line-height: 150%;
+  margin-bottom: 3.8rem;
+}
+.articles__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.articles__tags {
+  font-size: 1.8rem;
+}
+.articles__tags span:not(first-child) {
+  margin-left: 1.4rem;
 }/*# sourceMappingURL=style.css.map */
