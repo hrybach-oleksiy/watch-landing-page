@@ -13,3 +13,6 @@
 | Partners Section     | Work on Partners section               | 1                   |             |        |
 | Footer Section       | Work on Footer section                 | 2                   |             |        |
 
+
+- [ ] Header 
+- [x] Hero
