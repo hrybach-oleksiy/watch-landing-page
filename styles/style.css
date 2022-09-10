@@ -91,6 +91,9 @@ body {
   font-size: 1.6rem;
   color: var(--light-gray);
 }
+.watch-card__wrapper {
+  position: relative;
+}
 
 .btn {
   padding: 1.2rem 2.8rem;
@@ -99,6 +102,10 @@ body {
   font-size: 1.8rem;
   border: 0.1rem solid var(--white);
   color: var(--white);
+}
+
+.blur {
+  filter: blur(0.2rem);
 }
 
 .header .contacts {
@@ -227,4 +234,23 @@ body {
   line-height: 150%;
   text-align: center;
   margin-bottom: 7.6rem;
+}
+
+.new-arrival {
+  padding-top: 12rem;
+  padding-bottom: 15rem;
+  background-color: var(--black);
+}
+.new-arrival__title {
+  margin-bottom: 8.2rem;
+}
+.new-arrival__row:not(last-child) {
+  margin-bottom: 4rem;
+}
+.new-arrival__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 19.6rem;
 }/*# sourceMappingURL=style.css.map */

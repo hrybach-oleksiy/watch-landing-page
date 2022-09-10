@@ -100,6 +100,10 @@ body {
         font-size: 1.6rem;
         color: var(--light-gray);
     }
+
+    &__wrapper {
+        position: relative;
+    }
 }
 
 .btn {
@@ -110,6 +114,10 @@ body {
     border: 0.1rem solid var(--white);
     color: var(--white);
 
+}
+
+.blur {
+    filter: blur(0.2rem);
 }
 
 //header
@@ -290,6 +298,32 @@ body {
         }
     }
 
+}
+
+
+//new arrival
+.new-arrival {
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+    background-color: var(--black);
+
+    &__title {
+        margin-bottom: 8.2rem;
+    }
+
+    &__row {
+        &:not(last-child) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 19.6rem
+    }
 }
 
 
