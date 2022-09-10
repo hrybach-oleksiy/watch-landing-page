@@ -26,8 +26,9 @@
   --accent: #0f0f0f;
   --black: #000;
   --white: #fff;
-  --gluon-gray: #191B1C;
+  --gluon-gray: #191b1C;
   --shark-fin: #969696;
+  --light-gray: #d0d0d0;
   --content-width: 1110px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -39,12 +40,65 @@ html {
 
 body {
   font-family: "PT Sans", serif;
+  color: var(--white);
   max-width: 192rem;
 }
 
 .wrapper {
   max-width: var(--container-width);
   margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Playfair";
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 12rem;
+  height: 0.1rem;
+  background-color: var(--white);
+  margin-top: 3.7rem;
+}
+
+.watch-card {
+  background-color: var(--black);
+  font-family: "Playfair";
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.watch-card__img {
+  width: 100%;
+  background-color: var(--gluon-gray);
+  margin-bottom: 2.5rem;
+  padding: 2.7rem 2.2rem 3.4rem;
+}
+.watch-card__description {
+  padding: 0;
+  background-color: var(--black);
+  color: var(--white);
+}
+.watch-card__price {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--light-gray);
+}
+
+.btn {
+  padding: 1.2rem 2.8rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  border: 0.1rem solid var(--white);
+  color: var(--white);
 }
 
 .header .contacts {
@@ -103,7 +157,6 @@ body {
   background-image: url("../assets/img/hero-bg.jpg");
   background-repeat: no-repeat;
   padding-top: 16rem;
-  padding-bottom: 15.4rem;
   color: var(--white);
   text-transform: uppercase;
 }
@@ -129,4 +182,49 @@ body {
   text-align: center;
   line-height: 150%;
   font-size: 1.6rem;
+}
+
+.collection {
+  background-color: var(--black);
+}
+.collection .season-block {
+  padding: 9.3rem 8rem;
+}
+.collection .season-block .card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+.collection .new-collection-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../assets/img/collection-img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+.collection .new-collection-block__title {
+  margin-bottom: 3rem;
+}
+.collection .image-block__img {
+  width: 100%;
+}
+.collection .collection-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.collection .collection-block__title {
+  margin-bottom: 4rem;
+}
+.collection .collection-block__description {
+  max-width: 62.8rem;
+  font-size: 1.4rem;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 7.6rem;
 }/*# sourceMappingURL=style.css.map */
