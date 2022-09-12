@@ -123,6 +123,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  flex-wrap: wrap;
 }
 .header .contacts__phone {
   display: flex;
@@ -470,4 +471,46 @@ body {
 .footer .copyright__link {
   color: var(--light-gray);
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1159px) {
+  .header .contacts, .header .nav {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .new-arrival {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 7rem;
+  }
+  .footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header .nav .menu__list {
+    align-items: flex-start;
+    position: relative;
+    top: 4rem;
+  }
+  .header .nav .menu__item:nth-child(4), .header .nav .menu__item:last-child {
+    margin-left: 1.5rem;
+  }
+  .header .nav .menu__link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header .nav .menu__link:hover {
+    background-color: transparent;
+  }
+  .hero {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .contacts__phone {
+    margin-bottom: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

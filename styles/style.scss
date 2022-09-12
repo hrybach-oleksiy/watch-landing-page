@@ -144,6 +144,7 @@ body {
             display: flex;
             justify-content: space-between;
             padding: 0;
+            flex-wrap: wrap;
         }
 
         &__phone {
@@ -602,3 +603,72 @@ body {
 }
 
 
+//media
+
+@media screen and (max-width: 1159px) {
+    .header {
+
+        .contacts, .nav {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        }
+    }
+
+    .new-arrival {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 7rem;
+    }
+
+    // .partners {
+    //     padding: ;
+    // }
+
+    .footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+  }
+
+@media  screen and (max-width: 991px) {
+    .header {
+
+        .nav {
+
+            .menu__list {
+                align-items: flex-start;
+                position: relative;
+                top: 4rem;
+            }
+
+            .menu__item {
+                
+                &:nth-child(4), &:last-child {
+                    margin-left: 1.5rem;
+                }
+            }
+
+            .menu__link {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .hero {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media  screen and (max-width: 560px) {
+    .contacts {
+        &__phone {
+        margin-bottom: 1.5rem;
+        }
+    } 
+}
