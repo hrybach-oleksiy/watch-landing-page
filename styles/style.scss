@@ -125,12 +125,8 @@ body {
     background-color: var(--black);
     font-family: 'Playfair';
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     border: none;
-
-    @include _sm {
-        font-size: 1.8rem;
-    }
 
     &__img-wrapper {
         padding: 1.4rem 7rem 2.5rem;
@@ -173,12 +169,8 @@ body {
 
     &__price {
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         color: var(--light-gray);
-
-        @include _sm {
-            font-size: 1.6rem; 
-        }
     }
 
     &__wrapper {
@@ -270,9 +262,13 @@ body {
 
 }
 
-    .nav {
+    .navigation {
         background-color: var(--accent);
         padding: 1rem 0.75rem;
+
+        @include _lg {
+            padding: 0 0.75rem;
+        }
 
         @include _3xl {
             height: 8rem; 
@@ -291,6 +287,11 @@ body {
             }
 
             &__item {
+
+                @include _xl {
+                    margin-left: 2rem;
+                }
+                
                 &:last-child, &:nth-child(4) {
                     
                     @include _3xl {
@@ -304,7 +305,7 @@ body {
                 text-transform: uppercase;
                 height: 100%;
                 
-                @include _3xl {
+                @include _lg {
                     padding-bottom: 3rem;
                     padding-top: 3rem;
                 }
@@ -326,7 +327,7 @@ body {
                 &:hover {
                     color: var(--white);
 
-                    @include _3xl {
+                    @include _lg {
                         background-color: #1F1F1F;
                     }
                 }
@@ -516,7 +517,7 @@ body {
             text-align: center;
             margin-bottom: 2rem;
 
-            @include _3xl {
+            @include _md {
                 margin-bottom: 6.9rem;
                 font-size: 1.4rem;
                 line-height: 150%;
@@ -538,6 +539,10 @@ body {
 .new-arrival {
     padding-top: 2rem;
     background-color: var(--black);
+
+    @include _lg {
+        padding-bottom: 2rem;
+    }
 
     @include _3xl {
         padding-top: 11.5rem;
@@ -578,9 +583,6 @@ body {
         min-width: 18.6rem; 
     }
 
-    &__sm {
-        height: 30.3rem;
-    }
 }
 
 //articles
@@ -623,6 +625,11 @@ body {
 
     &__info {
 
+        @include _lg {
+            padding-left: 1rem;
+            padding-right: 2rem;
+        }
+
         @include _3xl {
             padding-left: 17.5rem;
             padding-top: 5.2rem;
@@ -647,7 +654,7 @@ body {
         line-height: 150%;
         margin-bottom: 2rem;
 
-        @include _3xl {
+        @include _lg {
             font-size: 1.4rem;
             margin-bottom: 3.8rem;
         }
@@ -661,6 +668,10 @@ body {
 
     &__tags {
         font-size: 0.7rem;
+
+        @include _lg {
+            font-size: 1.4rem;
+        }
 
         @include _3xl {
             font-size: 1.8rem;
@@ -698,6 +709,10 @@ body {
     &__row {
         display: flex;
         align-items: center;
+
+        @include _lg {
+            max-width: 75rem;
+        }
     }
 
     &__col {
@@ -747,6 +762,17 @@ body {
     }
 
     &__col {
+
+        @include _md {
+            &:nth-child(2) {
+                padding-left: 2rem;
+            }
+        }
+
+        @include _lg {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
 
         &:not(:last-child) {
             margin-bottom: 3rem;
@@ -815,6 +841,11 @@ body {
     &__form {
         margin-top: 2.6rem;
         display: flex;
+        justify-content: center;
+
+        @include _3xl {
+            justify-content: start;
+        }
     }
 
     &__input {
@@ -851,8 +882,6 @@ body {
         @include _3xl {
             bottom: -3rem;
         }
-    
-
         &__wrapper {
             display: flex;
             justify-content: space-between;
