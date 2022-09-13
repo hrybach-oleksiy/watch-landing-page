@@ -155,6 +155,7 @@ body {
 
     &__img {
         object-fit: cover;
+        transition: all .5s ease-in-out;
     }
 
     &__description {
@@ -176,6 +177,13 @@ body {
     &__wrapper {
         position: relative;
     }
+
+    &__link {
+
+        &:hover .watch-card__img {
+            transform: scale(1.2);
+        }
+    }
 }
 
 .button {
@@ -187,6 +195,12 @@ body {
     font-size: 1.5rem;
     border: 0.1rem solid var(--white);
     color: var(--white);
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        color: var(--gluon-gray);
+        background-color: var(--white);
+    }
 
     @include _sm {
         font-size: 1.8rem;
@@ -242,6 +256,11 @@ body {
             color: var(--shark-fin);
             display: flex;
             align-items: center;
+            transition: color .3s ease-in;
+
+            &:hover {
+                color: var(--white);
+            }
         }
 
         &__icon{
@@ -259,7 +278,6 @@ body {
             }
         }
     }
-
 }
 
     .navigation {
@@ -306,30 +324,21 @@ body {
                 height: 100%;
                 
                 @include _lg {
-                    padding-bottom: 3rem;
-                    padding-top: 3rem;
+                    padding: 3rem 2rem;
                 }
                
-                // &_first {
-                //     padding-left: 2rem;
-                //     padding-right: 1.8rem;
-                // }
-
-                // &_second {
-                //     padding-left: 1.7rem;
-                //     padding-right: 1.8rem;
-                // }
-
-                // &_third{
-                //     padding-left: 1.7rem;
-                // }
-
                 &:hover {
                     color: var(--white);
 
                     @include _lg {
                         background-color: #1F1F1F;
                     }
+                }
+            }
+
+            &__icon {
+                &:hover {
+                    transform: scale(1.1);
                 }
             }
         }
@@ -428,7 +437,7 @@ body {
 
             @include _3xl {
                 &:not(:first-child) {
-                    // margin-left: 3rem;
+                    // margi-left: 2rem;
                 }
             }
         }
@@ -470,15 +479,6 @@ body {
         &__img {
             width: 100%;
         }
-
-        &__btn {
-            
-            @include _3xl {
-               
-                
-            }
-
-        }
     }
 
     .image-block {
@@ -500,7 +500,6 @@ body {
             padding-right: 7.1rem;
         }
         
-
         &__title {
             font-weight: 400;
             margin-bottom: 2rem;
@@ -570,9 +569,6 @@ body {
                 max-height: 20px;
             }
         }
-        // &:not(:last-child) {
-        //     margin-right: 2.3rem;
-        // }
     }
 
     &__btn {
@@ -582,7 +578,6 @@ body {
         transform: translate(-50%, -50%);
         min-width: 18.6rem; 
     }
-
 }
 
 //articles
@@ -610,12 +605,6 @@ body {
                 margin-bottom: 3.5rem;
             }
         }
-    }
-
-    &__col {
-        // padding-left: 17.5rem;
-        // padding-top: 5.2rem;
-        // padding-right: 14.4rem;
     }
 
     &__img {
@@ -713,9 +702,14 @@ body {
         @include _lg {
             max-width: 75rem;
         }
+
+        @include _3xl {
+            max-width: 138.5rem;
+        }
     }
 
     &__col {
+        transition: all .5s ease-in-out;
 
         &:not(:last-child) {
             margin-bottom: 1.5rem;
@@ -724,14 +718,10 @@ body {
         &:last-child {
             margin-top: 2rem;
         }
-        // &:first-child {
-        //     margin-top: 1.1rem;
-        //     margin-right: 2.8rem;
-        // }
-    
-        // &:last-child {
-        //     align-self: flex-end;
-        // }
+        
+        &:hover .partners__logo {
+            transform: scale(1.2);
+        }
     }
 
     &__link {
@@ -739,14 +729,13 @@ body {
     }
 
     &__logo {
+        transition: all .5s ease-in-out;
         max-width: 23rem;
 
         @include _3xl {
             width: 100%;
         }
     }
-
-
 }
 
 //footer
@@ -774,21 +763,15 @@ body {
             padding-right: 3rem;
         }
 
+        @include _lg {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         &:not(:last-child) {
             margin-bottom: 3rem;
         }
-
-        // &:nth-child(2) {
-        //     max-width: 32.1rem;
-        //     margin-left: 1.6rem;
-        //     padding-left: 1.3rem;
-        // }
-
-        // &:last-child {
-        //     margin-left: 7.3rem;
-        // }
     }
-
 
     &__heading {
         font-family: 'Playfair';
@@ -828,9 +811,15 @@ body {
         color: var(--light-gray);
         background-color: #0f0f0f;
         text-align: center;
+        border: 1px solid transparent;
 
         &:nth-child(5) {
             margin-left: 0.4rem;
+        }
+
+        &:hover {
+            border: 1px solid var(--white);
+            color: var(--white);
         }
 
         @include _3xl {
@@ -854,7 +843,6 @@ body {
         padding-left: 1.5rem;
         background-color:  rgba(255, 255, 255, 0.4);
         
-
         &::placeholder {
             font-size: 1.4rem;
             color: #969696;
@@ -868,6 +856,11 @@ body {
         letter-spacing: 0.05em;
         background-color: #0f0f0f;
         padding: 1rem 2rem;
+
+        &:hover {
+            background-color: var(--light-gray);
+            color: var(--accent);
+        }
     }
 
     .copyright {
@@ -882,6 +875,7 @@ body {
         @include _3xl {
             bottom: -3rem;
         }
+
         &__wrapper {
             display: flex;
             justify-content: space-between;
@@ -892,9 +886,7 @@ body {
             color: var(--light-gray);
             text-decoration: underline;
         }
-    
     }
-
 }
 
 
