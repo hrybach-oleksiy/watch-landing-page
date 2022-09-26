@@ -1,0 +1,36 @@
+@mixin _xs {
+  @media (min-width: 399px) {
+    @content;
+  }
+}
+@mixin _sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin _md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin _lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin _xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin _xxl {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin _3xl {
+  @media (min-width: 1900px) {
+    @content;
+  }
+}

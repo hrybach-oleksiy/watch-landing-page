@@ -1,0 +1,117 @@
+.collection {
+  background-color: var(--black);
+
+  .season-block {
+    padding: 3rem 0.75rem;
+
+    @include _3xl {
+      padding-top: 9.7rem;
+      padding-left: 7.3rem;
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+
+      @include _3xl {
+        margin-bottom: 5rem;
+      }
+    }
+
+    &__col {
+      @include _3xl {
+        &:not(:first-child) {
+          // margi-left: 2rem;
+        }
+      }
+    }
+  }
+
+  .new-collection-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include _3xl {
+      padding-left: 7.4rem;
+    }
+
+    &__wrapper {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include _3xl {
+        bottom: 10.6rem;
+        left: 36.5rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+
+      @include _3xl {
+        &::after {
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .image-block {
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .collection-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+
+    @include _3xl {
+      padding-top: 2rem;
+      padding-right: 7.1rem;
+    }
+
+    &__title {
+      font-weight: 400;
+      margin-bottom: 2rem;
+
+      @include _3xl {
+        margin-bottom: 3.6rem;
+      }
+    }
+
+    &__description {
+      max-width: 62.8rem;
+      font-size: 1.2rem;
+      line-height: 150%;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      @include _md {
+        margin-bottom: 6.9rem;
+        font-size: 1.4rem;
+        line-height: 150%;
+      }
+    }
+  }
+
+  &__btn {
+    letter-spacing: 0.1em;
+
+    @include _3xl {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+    }
+  }
+}

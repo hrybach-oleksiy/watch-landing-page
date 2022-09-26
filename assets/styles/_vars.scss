@@ -1,0 +1,12 @@
+:root {
+  --accent: #0f0f0f;
+  --black: #000;
+  --white: #fff;
+  --gluon-gray: #191b1c;
+  --shark-fin: #969696;
+  --light-gray: #d0d0d0;
+
+  --content-width: 1112px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}

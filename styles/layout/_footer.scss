@@ -1,0 +1,148 @@
+.footer {
+  padding: 2rem 0;
+  background-image: url("../assets/img/footer-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include _3xl {
+    padding-top: 14.4rem;
+  }
+
+  &__col {
+    @include _md {
+      &:nth-child(2) {
+        padding-left: 2rem;
+      }
+    }
+
+    @include _lg {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    @include _lg {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__heading {
+    font-family: "Playfair";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include _3xl {
+      font-size: 2.4rem;
+      margin-bottom: 4rem;
+      text-align: left;
+    }
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    line-height: 150%;
+
+    @include _3xl {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  &__link {
+    padding: 1rem 2rem;
+    color: var(--white);
+    text-transform: lowercase;
+    font-size: 1.4rem;
+    line-height: 150%;
+    color: var(--light-gray);
+    background-color: #0f0f0f;
+    text-align: center;
+    border: 1px solid transparent;
+
+    &:nth-child(5) {
+      margin-left: 0.4rem;
+    }
+
+    &:hover {
+      border: 1px solid var(--white);
+      color: var(--white);
+    }
+
+    @include _3xl {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__form {
+    margin-top: 2.6rem;
+    display: flex;
+    justify-content: center;
+
+    @include _3xl {
+      justify-content: start;
+    }
+  }
+
+  &__input {
+    width: 21rem;
+    height: 4.2rem;
+    padding-left: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.4);
+
+    &::placeholder {
+      font-size: 1.4rem;
+      color: #969696;
+    }
+  }
+
+  &__btn {
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    background-color: #0f0f0f;
+    padding: 1rem 2rem;
+
+    &:hover {
+      background-color: var(--light-gray);
+      color: var(--accent);
+    }
+  }
+
+  .copyright {
+    position: relative;
+    bottom: -6rem;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    background-color: var(--accent);
+    font-size: 1.2rem;
+    color: var(--light-gray);
+
+    @include _3xl {
+      bottom: -3rem;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__link {
+      color: var(--light-gray);
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.new-arrival {
+  padding-top: 2rem;
+  background-color: var(--black);
+
+  @include _lg {
+    padding-bottom: 2rem;
+  }
+
+  @include _3xl {
+    padding-top: 11.5rem;
+    padding-bottom: 15rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+
+    @include _3xl {
+      margin-bottom: 8.2rem;
+    }
+  }
+
+  &__row {
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__col {
+    @include _3xl {
+      &:nth-child(3) {
+        max-height: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 18.6rem;
+  }
+}

@@ -1,0 +1,135 @@
+@import "../styles/mixins";
+@import "../styles/vars";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "PT Sans", serif;
+  color: var(--white);
+  max-width: 192rem;
+}
+
+.wrapper {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Playfair";
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+
+  @include _md {
+    font-size: 3.6rem;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 0.1rem;
+    background-color: var(--white);
+    margin-top: 1.7rem;
+
+    @include _md {
+      margin-top: 3.7rem;
+      width: 12rem;
+    }
+  }
+}
+
+.watch-card {
+  background-color: var(--black);
+  font-family: "Playfair";
+  font-weight: 400;
+  font-size: 1.8rem;
+  border: none;
+
+  &__img-wrapper {
+    padding: 1.4rem 7rem 2.5rem;
+    background-color: var(--gluon-gray);
+    margin-bottom: 1rem;
+
+    @include _xs {
+      padding: 3.5rem 10rem;
+      margin-bottom: 3rem;
+    }
+
+    @include _sm {
+      padding: 3.5rem 4rem;
+    }
+
+    @include _xl {
+      padding: 3.5rem 1rem;
+    }
+
+    @include _3xl {
+      padding: 0.5rem 1rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__description {
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--black);
+    color: var(--white);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--light-gray);
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__link {
+    &:hover .watch-card__img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.button {
+  display: block;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 0.1rem solid var(--white);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--gluon-gray);
+    background-color: var(--white);
+  }
+
+  @include _sm {
+    font-size: 1.8rem;
+  }
+}
+
+.blur {
+  filter: blur(0.2rem) brightness(0.6);
+}

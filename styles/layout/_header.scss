@@ -1,0 +1,139 @@
+.header {
+  .contacts {
+    background-color: var(--black);
+    color: var(--shark-fin);
+    padding: 1.2rem 0.75rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    &__phone {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+
+      span {
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 0.1rem;
+          height: 1.2rem;
+          background-color: var(--shark-fin);
+          margin: 0 0.9rem;
+        }
+      }
+    }
+
+    &__login {
+      text-align: right;
+    }
+
+    &__link {
+      color: var(--shark-fin);
+      display: flex;
+      align-items: center;
+      transition: color 0.3s ease-in;
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+
+    &__icon {
+      margin-right: 1rem;
+
+      @include _3xl {
+        margin-right: 2rem;
+      }
+
+      &__icon_mr {
+        margin-right: 1rem;
+
+        @include _3xl {
+          margin-right: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .navigation {
+    background-color: var(--accent);
+    padding: 1rem 0.75rem;
+
+    @include _lg {
+      padding: 0 0.75rem;
+    }
+
+    @include _3xl {
+      height: 8rem;
+      padding: 2rem 0.75rem;
+    }
+
+    button {
+      background-color: var(--white);
+    }
+
+    .menu {
+      &__list {
+        display: flex;
+        align-items: center;
+      }
+
+      &__item {
+        @include _xl {
+          margin-left: 2rem;
+        }
+
+        &:last-child,
+        &:nth-child(4) {
+          @include _3xl {
+            margin-left: 3.2rem;
+          }
+        }
+      }
+
+      &__link {
+        color: var(--shark-fin);
+        text-transform: uppercase;
+        height: 100%;
+
+        @include _lg {
+          padding: 3rem 2rem;
+        }
+
+        &:hover {
+          color: var(--white);
+
+          @include _lg {
+            background-color: #1f1f1f;
+          }
+        }
+      }
+
+      &__icon {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .logo {
+      font-family: "Post No Bills";
+      font-size: 3.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--white);
+      padding: 0;
+      margin-top: 0.7rem;
+    }
+  }
+}

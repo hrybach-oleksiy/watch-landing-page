@@ -1,0 +1,57 @@
+.partners {
+  background-color: var(--accent);
+  text-align: center;
+  padding: 3rem 1.5rem;
+
+  @include _3xl {
+    padding-top: 9.1rem;
+  }
+
+  &__title {
+    @include _3xl {
+      margin-bottom: 8.2rem;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    @include _lg {
+      max-width: 75rem;
+    }
+
+    @include _3xl {
+      max-width: 138.5rem;
+    }
+  }
+
+  &__col {
+    transition: all 0.5s ease-in-out;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &:last-child {
+      margin-top: 2rem;
+    }
+
+    &:hover .partners__logo {
+      transform: scale(1.2);
+    }
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__logo {
+    transition: all 0.5s ease-in-out;
+    max-width: 23rem;
+
+    @include _3xl {
+      width: 100%;
+    }
+  }
+}
