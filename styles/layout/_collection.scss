@@ -6,7 +6,7 @@
 
     @include _3xl {
       padding-top: 9.7rem;
-      padding-left: 7.3rem;
+      padding-left: 8.8rem;
     }
 
     &__title {
@@ -34,7 +34,7 @@
     align-items: center;
 
     @include _3xl {
-      padding-left: 7.4rem;
+      padding-left: 8.4rem;
     }
 
     &__wrapper {
@@ -65,6 +65,10 @@
   }
 
   .image-block {
+    @include _3xl {
+      padding-right: 2.4rem;
+    }
+
     &__img {
       width: 100%;
     }
@@ -78,8 +82,8 @@
     padding: 3rem 1.5rem;
 
     @include _3xl {
-      padding-top: 2rem;
-      padding-right: 7.1rem;
+      padding-top: 4rem;
+      padding-right: 9.1rem;
     }
 
     &__title {

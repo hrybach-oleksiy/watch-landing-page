@@ -3,6 +3,7 @@
     background-color: var(--black);
     color: var(--shark-fin);
     padding: 1.2rem 0.75rem;
+    padding-top: 1.3rem;
     font-size: 1.2rem;
     line-height: 1.6rem;
 
@@ -86,17 +87,25 @@
       &__list {
         display: flex;
         align-items: center;
+        margin-left: 46.2rem;
       }
 
       &__item {
         @include _xl {
-          margin-left: 2rem;
+          // margin-left: 2rem;
         }
 
         &:last-child,
         &:nth-child(4) {
           @include _3xl {
-            margin-left: 3.2rem;
+            padding-top: 1.4rem;
+          }
+        }
+
+        &:last-child {
+          @include _3xl {
+            padding-top: 1.4rem;
+            margin-left: 3rem;
           }
         }
       }
@@ -107,7 +116,7 @@
         height: 100%;
 
         @include _lg {
-          padding: 3rem 2rem;
+          padding: 3.5rem 1.9rem 2.8rem;
         }
 
         &:hover {
