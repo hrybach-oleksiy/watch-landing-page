@@ -47,6 +47,8 @@ body {
 }
 
 .watch-card {
+  width: 26rem;
+  height: 40.5rem;
   background-color: var(--black);
   font-family: "Playfair";
   font-weight: 400;
@@ -54,42 +56,48 @@ body {
   border: none;
 
   &__img-wrapper {
-    padding: 1.4rem 7rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3.4rem;
+    // padding: 1.4rem 7rem 2.5rem;
     background-color: var(--gluon-gray);
     margin-bottom: 1rem;
 
     @include _xs {
-      padding: 3.5rem 10rem;
+      // padding: 3.5rem 10rem;
       margin-bottom: 3rem;
     }
 
     @include _sm {
-      padding: 3.5rem 4rem;
+      // padding: 3.5rem 4rem;
     }
 
     @include _xl {
-      padding: 3.5rem 1rem;
+      // padding: 3.5rem 1rem;
     }
 
     @include _3xl {
-      padding: 0.5rem 1rem;
-      padding-bottom: 2rem;
+      // padding: 0.5rem 1rem;
+      // padding-bottom: 2rem;
     }
   }
 
   &__img {
-    object-fit: cover;
+    // object-fit: cover;
+    width: 21.5rem;
+    height: 26.4rem;
     transition: all 0.5s ease-in-out;
   }
 
   &__description {
-    padding-left: 1rem;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     background-color: var(--black);
     color: var(--white);
-    padding-top: 0;
-    padding-bottom: 0;
+  }
+
+  &__name {
+    margin-bottom: 1.1rem;
   }
 
   &__price {

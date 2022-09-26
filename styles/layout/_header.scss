@@ -19,6 +19,14 @@
       flex-wrap: wrap;
       padding: 0;
 
+      .contacts__description {
+        &:nth-child(2) {
+          @include _3xl {
+            margin-left: 0.7rem;
+          }
+        }
+      }
+
       span {
         display: flex;
         align-items: center;
@@ -56,8 +64,8 @@
         margin-right: 2rem;
       }
 
-      &__icon_mr {
-        margin-right: 1rem;
+      &--mr {
+        margin-right: 1.5rem;
 
         @include _3xl {
           margin-right: 1.4rem;
@@ -98,13 +106,24 @@
         &:last-child,
         &:nth-child(4) {
           @include _3xl {
-            padding-top: 1.4rem;
+            padding-top: 0.4rem;
+          }
+        }
+
+        &:nth-child(2) {
+          @include _3xl {
+            margin-right: -1rem;
+          }
+        }
+
+        &:nth-child(3) {
+          @include _3xl {
+            margin-right: 0.9rem;
           }
         }
 
         &:last-child {
           @include _3xl {
-            padding-top: 1.4rem;
             margin-left: 3rem;
           }
         }

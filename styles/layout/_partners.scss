@@ -4,7 +4,8 @@
   padding: 3rem 1.5rem;
 
   @include _3xl {
-    padding-top: 9.1rem;
+    padding-top: 9.8rem;
+    padding-bottom: 10.4rem;
   }
 
   &__title {
@@ -16,25 +17,36 @@
   &__row {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
 
-    @include _lg {
-      max-width: 75rem;
-    }
+    // @include _lg {
+    //   max-width: 75rem;
+    // }
 
-    @include _3xl {
-      max-width: 138.5rem;
-    }
+    // @include _3xl {
+    //   max-width: 138.5rem;
+    // }
   }
 
   &__col {
     transition: all 0.5s ease-in-out;
 
-    &:not(:last-child) {
-      margin-bottom: 1.5rem;
-    }
-
-    &:last-child {
-      margin-top: 2rem;
+    @include _3xl {
+      &:first-child {
+        width: 369px;
+      }
+      &:nth-child(2) {
+        width: 279px;
+        margin-top: -0.4rem;
+      }
+      &:nth-child(3) {
+        width: 271px;
+        align-self: flex-start;
+      }
+      &:last-child {
+        width: 376px;
+      }
     }
 
     &:hover .partners__logo {
@@ -48,10 +60,5 @@
 
   &__logo {
     transition: all 0.5s ease-in-out;
-    max-width: 23rem;
-
-    @include _3xl {
-      width: 100%;
-    }
   }
 }

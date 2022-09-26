@@ -6,12 +6,24 @@
   background-repeat: no-repeat;
 
   @include _3xl {
-    padding-top: 14.4rem;
+    background-position: center -0.3px;
+    background-size: auto;
+  }
+
+  @include _3xl {
+    padding-top: 8.1rem;
   }
 
   &__col {
     @include _md {
+      &:first-child {
+        padding-right: 2rem;
+      }
       &:nth-child(2) {
+        padding-left: 1rem;
+      }
+
+      &:last-child {
         padding-left: 2rem;
       }
     }
@@ -73,6 +85,12 @@
 
     &:nth-child(5) {
       margin-left: 0.4rem;
+    }
+
+    &:last-child {
+      @include _3xl {
+        margin-top: -0.7rem;
+      }
     }
 
     &:hover {

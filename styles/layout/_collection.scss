@@ -3,6 +3,7 @@
 
   .season-block {
     padding: 3rem 0.75rem;
+    padding-right: 0;
 
     @include _3xl {
       padding-top: 9.7rem;
@@ -19,9 +20,11 @@
 
     &__col {
       @include _3xl {
-        &:not(:first-child) {
-          // margi-left: 2rem;
+        &:not(:last-child) {
+          margin-right: 5rem;
         }
+        width: 26rem;
+        padding: 0;
       }
     }
   }
@@ -44,7 +47,7 @@
       align-items: center;
 
       @include _3xl {
-        bottom: 10.6rem;
+        bottom: 9.6rem;
         left: 36.5rem;
       }
     }
@@ -61,6 +64,14 @@
 
     &__img {
       width: 100%;
+    }
+
+    &__btn {
+      padding-top: 1.3rem;
+      letter-spacing: 0.1rem;
+      padding-left: 0.6rem;
+      width: 13.8rem;
+      height: 4.7rem;
     }
   }
 
