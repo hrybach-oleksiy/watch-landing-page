@@ -39,7 +39,8 @@
 
       @include _3xl {
         &:not(:last-child) {
-          margin-right: 5rem;
+          // margin-right: 5rem;
+          margin-right: 4.6rem;
         }
 
         width: 26rem;
