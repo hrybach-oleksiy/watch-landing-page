@@ -1,5 +1,5 @@
 @mixin _xs {
-  @media (min-width: 399px) {
+  @media (min-width: 324px) {
     @content;
   }
 }
@@ -30,7 +30,7 @@
 }
 
 @mixin _3xl {
-  @media (min-width: 1900px) {
+  @media (min-width: 1919px) {
     @content;
   }
 }

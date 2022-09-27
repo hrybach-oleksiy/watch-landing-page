@@ -1,5 +1,5 @@
 .footer {
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   background-image: url("../assets/img/footer-bg.jpg");
   background-position: center center;
   background-size: cover;
@@ -11,7 +11,17 @@
   }
 
   @include _3xl {
-    padding-top: 8.1rem;
+    padding-top: 8.2rem;
+  }
+
+  &__row {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+
+    @include _3xl {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__col {
@@ -45,7 +55,7 @@
 
   &__heading {
     font-family: "Playfair";
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
     text-align: center;
@@ -58,12 +68,8 @@
   }
 
   &__description {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 150%;
-
-    @include _3xl {
-      font-size: 1.4rem;
-    }
   }
 
   &__tags {
@@ -84,7 +90,10 @@
     border: 1px solid transparent;
 
     &:nth-child(5) {
-      margin-left: 0.4rem;
+      @include _3xl {
+        margin-left: 0.4rem;
+        margin-bottom: 1.6rem;
+      }
     }
 
     &:last-child {
@@ -99,7 +108,7 @@
     }
 
     @include _3xl {
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.2rem;
     }
   }
 
@@ -107,6 +116,7 @@
     margin-top: 2.6rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     @include _3xl {
       justify-content: start;
@@ -141,7 +151,7 @@
 
   .copyright {
     position: relative;
-    bottom: -6rem;
+    bottom: -4rem;
     padding-top: 1.7rem;
     padding-bottom: 1.7rem;
     background-color: var(--accent);
@@ -149,7 +159,7 @@
     color: var(--light-gray);
 
     @include _3xl {
-      bottom: -3rem;
+      bottom: -2.7rem;
     }
 
     &__wrapper {

@@ -55,36 +55,26 @@ body {
   font-size: 1.8rem;
   border: none;
 
+  &--small {
+    @media (min-width: 1400px) and (max-width: 1700px) {
+      width: 21rem;
+    }
+  }
+
   &__img-wrapper {
     display: flex;
     justify-content: center;
     padding-top: 3rem;
-    padding-bottom: 3.4rem;
-    // padding: 1.4rem 7rem 2.5rem;
+    padding-bottom: 3.1rem;
     background-color: var(--gluon-gray);
     margin-bottom: 1rem;
 
     @include _xs {
-      // padding: 3.5rem 10rem;
       margin-bottom: 3rem;
-    }
-
-    @include _sm {
-      // padding: 3.5rem 4rem;
-    }
-
-    @include _xl {
-      // padding: 3.5rem 1rem;
-    }
-
-    @include _3xl {
-      // padding: 0.5rem 1rem;
-      // padding-bottom: 2rem;
     }
   }
 
   &__img {
-    // object-fit: cover;
     width: 21.5rem;
     height: 26.4rem;
     transition: all 0.5s ease-in-out;
@@ -97,7 +87,7 @@ body {
   }
 
   &__name {
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.3rem;
   }
 
   &__price {

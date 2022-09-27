@@ -18,17 +18,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10.5rem 5.8rem;
+    padding: 10.5rem 1.8rem;
     border: 0.4rem solid var(--white);
     margin-bottom: 8.2rem;
+
+    @include _xs {
+      padding: 10.5rem 5.8rem;
+    }
   }
 
   &__title {
     font-family: "Post No Bills";
     font-size: 6rem;
     border-bottom: 0.2rem solid var(--white);
-    margin-bottom: 0.7rem;
-    line-height: 1.1;
+    margin-bottom: 1.3rem;
+    line-height: 1;
 
     @include _sm {
       font-size: 6.4rem;
@@ -47,7 +51,7 @@
     max-width: 75rem;
     text-align: center;
     line-height: 150%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 
     @include _sm {
       font-size: 1.6rem;
